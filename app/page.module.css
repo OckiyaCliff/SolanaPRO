@@ -1,0 +1,83 @@
+/* presale.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0e0e10, #1f1f22);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+  background: -webkit-linear-gradient(45deg, #00f5d4, #00bbf9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #a1a1aa;
+}
+
+.inputField {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #1c1c1e;
+  color: #fff;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.inputField:focus {
+  border: 1px solid #00f5d4;
+}
+
+.button {
+  background: linear-gradient(135deg, #00f5d4, #00bbf9);
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  color: #0e0e10;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: 600;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(0, 241, 217, 0.4);
+}
+
+.transactionStatus {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #00f5d4;
+}
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 2rem;
+  }
+
+  .inputField {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+}
